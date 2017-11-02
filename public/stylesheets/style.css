@@ -1,0 +1,13 @@
+body {
+  font: 104px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+div{
+  align-items: center;
+}
+h1{
+  text-align: center;
+  height: 100%;
+}
+a {
+  color: #00B7FF;
+}

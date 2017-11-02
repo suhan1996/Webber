@@ -1,0 +1,670 @@
+<!--PEN CODE-->
+<head>
+    <style>
+        /*!*PEN STYLES*!*/
+        /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);*/
+        /*body {*/
+            /*background: #fff;*/
+            /*margin: 2rem;*/
+        /*}*/
+
+        /*.blog-card {*/
+            /*transition: height 0.3s ease;*/
+            /*-webkit-transition: height 0.3s ease;*/
+            /*background: #fff;*/
+            /*!*border-radius: 3px;*!*/
+            /*!*box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);*!*/
+            /*margin: 0 0 1.6%;*/
+            /*overflow: hidden;*/
+            /*position: relative;*/
+            /*font-size: 14px;*/
+            /*line-height: 1.45em;*/
+            /*-webkit-font-smoothing: antialiased;*/
+            /*-moz-osx-font-smoothing: grayscale;*/
+        /*}*/
+        /*.blog-card:hover .details {*/
+            /*left: 0;*/
+        /*}*/
+        /*.blog-card:hover.alt .details {*/
+            /*right: 0;*/
+        /*}*/
+        /*.blog-card.alt .details {*/
+            /*right: -100%;*/
+            /*left: inherit;*/
+        /*}*/
+        /*.blog-card .photo {*/
+            /*height: 200px;*/
+            /*position: relative;*/
+        /*}*/
+        /*.blog-card .photo.photo1 {*/
+            /*background: url("http://i62.tinypic.com/34oq4o0.jpg") center no-repeat;*/
+            /*background-size: cover;*/
+        /*}*/
+        /*.blog-card .photo.photo2 {*/
+            /*background: url("http://i60.tinypic.com/xeiv79.jpg") center no-repeat;*/
+            /*background-size: cover;*/
+        /*}*/
+        /*.blog-card .details {*/
+            /*transition: all 0.3s ease;*/
+            /*-webkit-transition: all 0.3s ease;*/
+            /*background: rgba(0, 0, 0, 0.6);*/
+            /*box-sizing: border-box;*/
+            /*color: #fff;*/
+            /*font-family: "Open Sans";*/
+            /*list-style: none;*/
+            /*margin: 0;*/
+            /*padding: 10px 15px;*/
+            /*height: 200px;*/
+            /*!*POSITION*!*/
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*left: -100%;*/
+        /*}*/
+        /*.blog-card .details > li {*/
+            /*padding: 3px 0;*/
+        /*}*/
+        /*.blog-card .details li:before, .blog-card .details .tags ul:before {*/
+            /*font-family: FontAwesome;*/
+            /*margin-right: 10px;*/
+            /*vertical-align: middle;*/
+        /*}*/
+        /*.blog-card .details .author:before {*/
+            /*content: "\f007";*/
+        /*}*/
+        /*.blog-card .details .date:before {*/
+            /*content: "\f133";*/
+        /*}*/
+        /*.blog-card .details .tags ul {*/
+            /*list-style: none;*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+        /*}*/
+        /*.blog-card .details .tags ul:before {*/
+            /*content: "\f02b";*/
+        /*}*/
+        /*.blog-card .details .tags li {*/
+            /*display: inline-block;*/
+            /*margin-right: 3px;*/
+        /*}*/
+        /*.blog-card .details a {*/
+            /*color: inherit;*/
+            /*border-bottom: 1px dotted;*/
+        /*}*/
+        /*.blog-card .details a:hover {*/
+            /*color: #75D13B;*/
+        /*}*/
+        /*.blog-card .description {*/
+            /*padding: 10px;*/
+            /*box-sizing: border-box;*/
+            /*position: relative;*/
+        /*}*/
+        /*.blog-card .description h1 {*/
+            /*font-family: "Roboto";*/
+            /*line-height: 1em;*/
+            /*margin: 0 0 10px 0;*/
+        /*}*/
+        /*.blog-card .description h2 {*/
+            /*color: #9b9b9b;*/
+            /*font-family: "Open Sans";*/
+            /*line-height: 1.2em;*/
+            /*text-transform: uppercase;*/
+            /*font-size: 1em;*/
+            /*font-weight: 400;*/
+            /*margin: 1.2% 0;*/
+        /*}*/
+        /*.blog-card .description p {*/
+            /*position: relative;*/
+            /*margin: 0;*/
+            /*padding-top: 20px;*/
+        /*}*/
+        /*.blog-card .description p:after {*/
+            /*content: "";*/
+            /*background: #75D13B;*/
+            /*height: 6px;*/
+            /*width: 40px;*/
+            /*!*POSITION*!*/
+            /*position: absolute;*/
+            /*top: 6px;*/
+            /*left: 0;*/
+        /*}*/
+        /*.blog-card .description a {*/
+            /*color: #75D13B;*/
+            /*margin-bottom: 10px;*/
+            /*float: right;*/
+        /*}*/
+        /*.blog-card .description a:after {*/
+            /*transition: all 0.3s ease;*/
+            /*-webkit-transition: all 0.3s ease;*/
+            /*content: "\f061";*/
+            /*font-family: FontAwesome;*/
+            /*margin-left: -10px;*/
+            /*opacity: 0;*/
+            /*vertical-align: middle;*/
+        /*}*/
+        /*.blog-card .description a:hover:after {*/
+            /*margin-left: 5px;*/
+            /*opacity: 1;*/
+        /*}*/
+
+        /*@media screen and (min-width: 600px) {*/
+            /*.blog-card {*/
+                /*height: 100%;*/
+                /*max-width: 100%;*/
+            /*}*/
+            /*.blog-card:hover .photo {*/
+                /*transform: rotate(5deg) scale(1.3);*/
+            /*}*/
+            /*.blog-card:hover.alt .photo {*/
+                /*transform: rotate(5deg) scale(1.3);*/
+            /*}*/
+            /*.blog-card.alt .details {*/
+                /*padding-left: 0px;*/
+            /*}*/
+            /*.blog-card.alt .description {*/
+                /*float: right;*/
+            /*}*/
+            /*.blog-card.alt .description:before {*/
+                /*transform: skewX(5deg);*/
+                /*right: 145px;*/
+                /*left: inherit;*/
+            /*}*/
+            /*.blog-card.alt .photo {*/
+                /*float: right;*/
+            /*}*/
+            /*.blog-card .photo {*/
+                /*transition: all 0.5s ease;*/
+                /*-webkit-transition: all 0.5s ease;*/
+                /*float: left;*/
+                /*height: 100%;*/
+                /*width: 40%;*/
+            /*}*/
+            /*.blog-card .details {*/
+                /*width: 40%;*/
+            /*}*/
+            /*.blog-card .description {*/
+                /*float: left;*/
+                /*width: 60%;*/
+                /*z-index: 0;*/
+            /*}*/
+            /*.blog-card .description:before {*/
+                /*transform: skewX(-5deg);*/
+                /*content: "";*/
+                /*background: #fff;*/
+                /*width: 100%;*/
+                /*z-index: -1;*/
+                /*!*POSITION*!*/
+                /*position: absolute;*/
+                /*left: -15px;*/
+                /*top: 0;*/
+                /*bottom: 0;*/
+            /*}*/
+        /*}*/
+        /* Base Styles */
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.4em;
+            color: #222;
+            background: whitesmoke;
+            font-family: 'Lato', sans-serif;
+            font-weight: lighter;
+        }
+
+        img{
+            max-width:90%;
+            /*width: 80%;*/
+            display: block;
+            margin: auto;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Grid */
+
+        .section {
+            clear: both;
+            padding: 0;
+            margin: 0;
+            align-content: center;
+        }
+
+        .col {
+            /*width: 50%;*/
+
+            display: block;
+
+            margin: 1% 0 1% 1.6%;
+        }
+        .col:first-child { margin-left: 0; }
+
+        .span_3_of_3 {
+            width: 100%;
+        }
+        .span_2_of_3 {
+            /*width: 66.1%;*/
+        }
+        .span_1_of_3 {
+            /*width: 32.2%;*/
+        }
+
+        /* Header & Navigation */
+
+        header{
+            max-width: 100%;
+            background: #222; /*FallBack*/
+            background: rgba(0,0,0,.6);
+            padding: 20px;
+        }
+
+        nav{
+            width: 100%;
+            margin-bottom: 1em;
+            /*background: #323232;*/
+            font-weight: 100;
+            font-family:  "Adobe Ming Std";
+        }
+
+        .logo{
+            text-align: center;
+            color: #fff;
+            font-size: 3em;
+            font-weight: 100;
+            font-family: "Adobe Ming Std";
+        }
+
+        ul{
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            color: gray;
+            text-align: center;
+            -webkit-transition: max-height 0.5s;
+            transition: max-height 0.5s;
+        }
+
+        .nav-item{
+            display: inline-block;
+            padding: 20px;
+            font-size: 1.4em;
+            -webkit-transition: background .5s;
+            transition: background .5s
+        }
+
+        .nav-item:hover{
+            /*background: #474747;*/
+            color:black;
+            cursor: pointer;
+            transition: 1.5s;
+        }
+
+        .menu-bar{
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+            background: #2d2d2d;
+            text-align: left;
+            padding: 15px 20px;
+            color: #fff;
+            font-size: 1.4em;
+            cursor: pointer;
+            display: none;
+        }
+
+        .hamburger-icon{
+            float: right;
+            clear: both;
+            margin-top: -5px;
+            font-size: 1.4em;
+        }
+
+        /* Blog Posts */
+
+        .container{
+            align-content: center;
+            /*max-width: 1020px;*/
+            margin: 0 auto;
+            /*padding: 20px;*/
+        }
+
+
+
+        .blog-post{
+            align-content: center;
+            width: 100%;
+            background: whitesmoke;
+            margin-top: 5vmax;
+            border-right: 5vmax;
+            border-left: 5vmax;
+            margin-bottom: 2em;
+            padding-top: 2vmax;
+            /*padding-right: 2vmax;*/
+            /*padding-left: 2vmax;*/
+            padding-bottom: 2vmax;
+            /*box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);*/
+        }
+
+        .side-post{
+            background: #fff;
+            margin: 0 auto 1.5em auto;
+            width: 15em;
+            padding: 20px;
+        }
+
+        .blog-content{
+            margin-left: 5vmax;
+            margin-right: 5vmax;
+            font-size: 1em;
+            border-left: 5px solid gainsboro;
+            padding-left: 15px;
+        }
+
+        .side-content{
+            font-size: .9em;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+
+        .blog-title{
+            text-align: center;
+
+            font-size: 2.5em;
+            margin-top: 5px;
+        }
+
+        .date{
+            text-align: center;
+
+            font-size: 1em;
+            font-weight: 100;
+            color: #9C9C9C;
+            margin-top: -10px;
+            /*text-decoration: blink;*/
+            text-decoration-color: currentColor;
+        }
+
+        .post-link{
+            margin-left: 5vmax;
+            color: #009ACD;
+            font-style: italic;
+            transition: all 0.4s;
+        }
+
+        .post-link:hover{
+            color: #005c7b;
+            text-decoration: underline;
+            text-decoration-color: currentColor;
+            cursor: pointer;
+        }
+
+        /* Button */
+
+        .button{
+            display: block;
+            padding: 15px 20px;
+            margin-top: .8em;
+            background: #009ACD;
+            text-align: center;
+            color: #fff;
+            font-size: 1.4em;
+            border-radius: 3px;
+            transition: all .4s ease-in;
+        }
+
+        .button:hover{
+            background: #005c7b;
+        }
+
+        /*Media Queries*/
+
+        /* @900px*/
+        @media only screen and (max-width: 56.25em) {
+            .col{ margin: 1% 0 1% 0%;}
+            .span_3_of_3, .span_2_of_3, .span_1_of_3{ width: 100%; }
+            .side-post{ width: 42%;
+                float: left;
+                margin: -2% 0 1% 1.6%;}
+        }
+
+        /* @685px*/
+        @media only screen and (max-width: 42.813em) {
+            .side-post{ width: auto;
+                padding: 15px;
+                margin: -2% auto 8% auto; }
+            .blog-title{ font-size: 1.95em; }
+            .date{ font-size: .9em; }
+        }
+
+        /* @480px */
+        @media only screen and (max-width: 30em){
+            nav ul{ max-height: 0; }
+            .reveal{ max-height:19em; }
+            nav ul .nav-item{ -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box;
+                width:100%;
+                padding: 15px; }
+
+            .menu-bar{ display: block; }
+
+        }
+
+        /* @380px*/
+        @media only screen and (max-width: 23.75em) {
+            .blog-content, .post-link{ font-size: .9em; }
+            .side-content{ font-size: .8em; }
+            .button{ padding: 10px 15px; }
+            .nav-item{ font-size: 1.2em; }
+        }
+        .sticker {
+            margin-left: 1vmax;
+            position: fixed;
+
+            width: 80px;
+            height: 80px;
+        }
+
+        .example-1 .sticker-img {
+            z-index: 100;
+            position: fixed;
+            background: whitesmoke;
+
+            background-image: url(images/logo_sh.png);
+            background-repeat: no-repeat;
+        }
+
+        .example-2 .sticker-img {
+            background-color: #ff4a85;
+        }
+
+        .example-2 .sticker-shadow {
+            opacity: 0.6;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo_sh_2.png" />
+    <title>Blog of Han Su</title>
+
+</head>
+<body>
+<!--<img src="images/logo_sh.png">-->
+
+<div class="sticker example-1"></div>
+
+<!--<div class="sticker example-2"></div>-->
+
+<script >(function(){var m,b=null,h=["webkit","Moz","ms","O"],d="all 0.6s cubic-bezier(.23,1,.32,1)",j="all 0s",e=document.createElement("style");e.appendChild(document.createTextNode("    .shadowL {background: -moz-linear-gradient(right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 1%, rgba(0,0,0,0.7) 100%);background: -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0.7)));background: -webkit-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: -o-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: -ms-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);}    .shadowR {background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 1%, rgba(0,0,0,0.7) 100%);background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0.7)));background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);}    .shadowB {background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 1%, rgba(0,0,0,0.7) 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0.7)));background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);}    .shadowT {background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 1%, rgba(0,0,0,0.7) 100%);background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0.7)));background: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: -o-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: -ms-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.7) 100%);}"));document.head.appendChild(e);function o(u,v){var t=u.style,q,r;v=v.charAt(0).toUpperCase()+v.slice(1);for(r=0;r<h.length;r++){q=h[r]+v;if(t[q]!==undefined){return q}}if(t[v]!==undefined){return v}}function i(q,s){for(var r in s){q.style[o(q,r)||r]=s[r]}}function g(q,s){var r=document.createElement(q||"div");i(r,s);return r}function k(w,x,u){var t=x.x,s=x.y,r=w.pageX-t,q=w.pageY-s,v;if(r<u){v=0}else{if(r>u*3){v=1}else{if(q<u){v=2}else{v=3}}}return v}function n(v,z,C){var r=z.x,q=z.y,t=v.pageX-r,s=v.pageY-q,B,A=C-t,y=C-s,x=t>>1,w=s>>1,v=A>>1,u=y>>1;if(m==0){B={bx:-C,by:0,sx:-1,sy:1,bs:"shadowL",bmx:-C+t,bmy:0,bsw:t,bsh:C,bsx:A,bsy:0,cw:C-x,ch:C,cx:x,cy:0,dw:x,dh:C,dx:x-(x>>1),dy:0}}else{if(m==1){B={bx:C,by:0,sx:-1,sy:1,bs:"shadowR",bmx:t,bmy:0,bsw:A,bsh:C,bsx:0,bsy:0,cw:C-v,ch:C,cx:0,cy:0,dw:v,dh:C,dx:C-A+(v>>1),dy:0}}else{if(m==2){B={bx:0,by:-C,sx:1,sy:-1,bs:"shadowT",bmx:0,bmy:-C+s,bsw:C,bsh:s,bsx:0,bsy:y,cw:C,ch:C-w,cx:0,cy:w,dw:C,dh:w,dx:0,dy:w-(w>>1)}}else{B={bx:0,by:C,sx:1,sy:-1,bs:"shadowB",bmx:0,bmy:s,bsw:C,bsh:y,bsx:0,bsy:0,cw:C,ch:C-u,cx:0,cy:0,dw:C,dh:u,dx:0,dy:C-y+(u>>1)}}}}return B}function f(r,w){var y=w.container.getBoundingClientRect(),q={x:y.left+window.pageXOffset,y:y.top+window.pageYOffset};m=k(r,q,w.sizeQ);b=n(r,q,w.size);b.pos=q;var t=b.bx,s=b.by,v=b.sx,u=b.sy,x=b.bs;w.backShadow.className=w.depth.className="sticker-shadow "+x;i(w.mask,{transition:j,width:w.size+"px",height:w.size+"px",transform:"translate("+0+"px, "+0+"px)"});i(w.move,{transition:j,transform:"translate("+0+"px, "+0+"px)"});i(w.back,{transition:j,transform:"translate("+t+"px, "+s+"px)"});i(w.backImg,{transform:"scaleX("+v+") scaleY("+u+")"});i(w.depth,{transform:"translate("+-10000+"px, "+-10000+"px)"})}function l(s,q){if(b==null){return}var t=b.bx,r=b.by;i(q.mask,{transition:d,width:q.size+"px",height:q.size+"px",transform:"translate("+0+"px, "+0+"px)"});i(q.move,{transition:d,transform:"translate("+0+"px, "+0+"px)"});i(q.back,{transition:d,transform:"translate("+t+"px, "+r+"px)"});i(q.depth,{transform:"translate("+-10000+"px, "+-10000+"px)"});b=null}function a(A,E){if(b==null){f(A,E);window.document.addEventListener("mouseup",function(H){this.removeEventListener("mouseup",arguments.callee,false);l(H,E)},false)}var C=n(A,b.pos,E.size),w=C.bmx,v=C.bmy,u=C.bsw,D=C.bsh,t=C.bsx,s=C.bsy,z=C.cw,r=C.ch,y=C.cx,x=C.cy,q=C.dw,B=C.dh,G=C.dx,F=C.dy;i(E.mask,{width:z+"px",height:r+"px",transform:"translate("+y+"px, "+x+"px)"});i(E.move,{transform:"translate("+-y+"px, "+-x+"px)"});i(E.back,{transform:"translate("+w+"px, "+v+"px)"});i(E.backShadow,{width:u+"px",height:D+"px",transform:"translate("+t+"px, "+s+"px)"});i(E.depth,{width:q+"px",height:B+"px",transform:"translate("+G+"px, "+F+"px)"})}var c={init:function p(t){if(typeof t==="string"){var D=document.querySelectorAll(t),w,A=D.length;for(w=0;w<A;w++){p(D[w])}return}var C,z=t.getBoundingClientRect(),F=z.width,x=F>>2,q=g("div",{position:"relative",width:F+"px",height:F+"px",overflow:"hidden"}),E=g("div",{position:"relative",width:F+"px",height:F+"px",overflow:"hidden"}),s=g("div",{position:"relative",borderRadius:"50%",width:F+"px",height:F+"px",overflow:"hidden"}),r=g("div",{position:"relative",borderRadius:"50%",width:F+"px",height:F+"px",zIndex:1}),v=g("div",{position:"absolute",borderRadius:"50%",width:F+"px",height:F+"px",left:"0",top:"0",zIndex:3,backgroundColor:"#ffffff",transform:"translate("+F+"px, "+0+"px)",overflow:"hidden"}),B=g("div",{position:"relative",borderRadius:"50%",width:F+"px",height:F+"px",opacity:"0.4"}),y=g("div",{position:"absolute",width:F+"px",height:F+"px",left:"0",top:"0",zIndex:4}),u=g("div",{position:"absolute",width:F+"px",height:F+"px",left:"0",top:"0",zIndex:1});r.className="sticker-img sticker-front";B.className="sticker-img sticker-back";y.className=u.className="sticker-shadow";t.appendChild(q);q.appendChild(E);E.appendChild(s);s.appendChild(r);s.appendChild(u);s.appendChild(v);v.appendChild(B);v.appendChild(y);C={container:q,size:F,sizeQ:x,mask:E,move:s,depth:u,back:v,backImg:B,backShadow:y};t.addEventListener("mouseenter",function(G){f(G,C)},false);t.addEventListener("mouseleave",function(G){l(G,C)},false);t.addEventListener("mousemove",function(G){a(G,C)},false);return this}};if(typeof exports=="object"){module.exports=c}else{if(typeof define=="function"&&define.amd){define(function(){return c})}else{this.Sticker=c}}})();</script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        Sticker.init('.sticker');
+    }
+</script>
+
+
+
+
+<script>
+    $('.menu-bar').on('click', function(){
+        $('nav ul').toggleClass('reveal');
+    });
+
+</script>
+<!--<header>-->
+    <!--<h1 class="logo">Logo</h1>-->
+<!--</header>-->
+
+
+<nav>
+    <ul>
+        <li class="nav-item"><a href="#" >Politics of Code Blog</a></li>
+        <!--<li class="nav-item"><a href="#" >Blog</a></li>-->
+        <!--<li class="nav-item"><a href="#">About</a></li>-->
+        <!--<li class="nav-item"><a href="#" >Contact</a></li>-->
+    </ul>
+    <div class="menu-bar">Menu
+        <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+    </div>
+</nav>
+<div class="container">
+    <div class="section">
+        <div class="col span_2_of_3">
+            <div class="blog-post">
+                <h1 class="blog-title">Public on the Internet
+
+                </h1>
+                <h2 class="date">Posted 16th Oct 2017</h2>
+                <!--<img style="width: 50%" src="images/nyuadforum.PNG">-->
+                <p class="blog-content">In Michael Warner’s Publics and Counterpublics, the author discussed the definition of public and how public is formed. She mentioned internet briefly in the middle of the article. But with the giant change of the internet itself, the role it plays in our life is not what it was 15 years ago. Today, there is a special pubic in the internet.
+                </p>
+                <p class="blog-content">My thought is that internet helped to make a broader, more efficient, and more equal public, but still, there exists problems that the public is sometimes led be key opinion leaders, and people are not separated into social bubbles. Firstly, internet makes it possible for unsynchronized formation of public, we can see people’s comments and follow up our owns, in this way, the data in a public will increase to a great extent, therefore make it possible for new individuals to catch up the history of what happened. Moreover, internet makes strangers talk, in a traditional public, we don’t chat too deeply with strangers, but in terms of internet, discussion are consequently happened among people who don’t know each other, but that does not affect a meaningful discussion. Last but not least, internet make people get heard more equally than in traditional sense, if you got reason, your voice could be heard on the internet. In this way,   there will be less injustice in the whole public.</p>
+            </div>
+            <div class="blog-post">
+                <h1 class="blog-title">A novel way for ECD(Electronic Civil Disobedience)
+                </h1>
+                <h2 class="date">Posted 9th Oct 2017</h2>
+                <!--<img style="width: 50%" src="images/nyuadforum.PNG">-->
+                <p class="blog-content">As we all acknowledged today, civil disobedience is aimed for institutional reform rather than national collapse; Hence, I don’t think it’s appraisable for any kind of hijacking or DDOS attacks. The contradicts here is a way to express people’s voice online against the effect it aroused, bring down a governmental or a company’s website is apparently “loud” enough, however, that’s not the proper way to get heard. Moreover, the audience cannot get a clear message on what’s happening when they get a bad request from the server.
+                </p>
+                <p class="blog-content">Hence, while reading the works related to Electronic Civil Disobedience, I came up with a design for free-expression without doing harm to the web service itself. It is a page-based commentator, every web page has an ID and everyone could leave a message on that page. There could be things like word could to show what people are saying on this website. The ideal assumption is the everyone will be using this app/browser. For example, when people are visiting the tax.ny.gov, on the left side of the browser there’ll be a column dedicated on what people are saying here, and you can also express what you want to say. In this way, voices could be heard without doing harm to the site itself.
+                </p>
+            </div>
+            <div class="blog-post">
+                <h1 class="blog-title">Surveillance and Democracy In The Internet</h1>
+                <h2 class="date">Posted 2th Oct 2017</h2>
+                <!--<img style="width: 50%" src="images/nyuadforum.PNG">-->
+                <p class="blog-content">When there is power distribution, there is politics, when there is politics, there is no ideal democracy for every one. Internet is the most ideal medium for a democratic public sphere. However, as soon as the role of internet is big enough to be noticed by the government, surveillance and censorship will surely be adapted, either explicitly or secretly. What comes after would be propagandas and  governmental controls. The reason behind this is obvious, the powerful party will gain control over the weak one in a free environment. The Great Fire Wall of China, Hilary team’s slandering post on Trump, hypes by KOIs(key opinion leaders); All those are perfect examples for the non-democratic actuality in today’s internet. However, all those are derived from outside the internet, it uses internet a means of publication rather than communication. The difference between publication and communication is the later is between people with same voice to speak, and those who will be equally listened.
+                </p>
+                <p class="blog-content">Another thing I’d shortly discuss here is the difference between Social Contract and the latent law of the Internet. Internet is a simulation of the real world communication, hence, not a fully simulated world with limited resources and natural phenomenon. Moreover, the TCP/IP protocol determines the characteristics and limits of the Internet, just like the biological feature of the being determines the way it lives on this planet. Communication is ideally democratic, which is self-evident, therefore, internet is still the most promising environment for voices get heard equally. The problem today is the outside influence from a behindhand real world, where we still live under a powerful government who needs to get control. Anyway, in conclusion, I’m positive on the Internet itself, it still represents the most advanced means of communication, and I’m looking forward to some solutions to promote democracy on the internet.</p>
+
+            </div>
+            <div class="blog-post">
+                <h1 class="blog-title">New Project Idea: NYUAD Massrater</h1>
+                <h2 class="date">Posted 27th Sep 2017</h2>
+                <!--<img style="width: 50%" src="images/nyuadforum.PNG">-->
+                <p class="blog-content">Massrater will be a open rating section on the forum, on rating classes, professors, D2 Wednesday dishes .etc</p>
+                    <!--<a href="https://nyuadforum.herokuapp.com" class="post-link">See it here...</a>-->
+            </div>
+        </div>
+            <div class="blog-post">
+                <h1 class="blog-title">NYUAD Ecoherence Forum</h1>
+                <h2 class="date">Posted 27th Sep 2017</h2>
+                <img style="width: 50%" src="images/nyuadforum.PNG">
+                <p class="blog-content">NYUAD Ecoherence Forum is a project designed for NYU Abu Dhabi students to talk about the campus environment problems and advices, but the topics are not limited, you can post freely here anonymously.</p>
+                <a href="https://nyuadforum.herokuapp.com/about" class="post-link">See it here...</a>
+            </div>
+        </div>
+
+            <div class="blog-post">
+                <h1 class="blog-title">Models of Computing</h1>
+                <h2 class="date">Posted 25th Sep 2017</h2>
+                <p class="blog-content">Perhaps the most important difference between human and computer is the existence of conflicts of perceived logic; human could also be deemed as a machine which has perception on the environment. But the way it perceives the world is not obvious to us, that’s why it’s hard to simulate a omnipotent AI; Recently, deep learning has developed swiftly thanks to the computation power of today’s machine, however, that’s still different from how a real person perceives the environment. In a ascending order of complexity, I’d put the perception ability of inputs in this way: machine language, programming language, traditional machine learning algorithms, deep neural networks, human languages. With a very basic turning machine, you can only put certain order to do certain job, and the model to solve a job is called an algorithm, which is not derived from the machine it self. This kind of computation involves to Machine Learning Algorithms, which could have multiple inputs of data in a certain format, then produces predictions based on probability; This is one step closer to human perception, but still, way more basic than human. I’d compare the ML algorithm with paramecium, a little being who has only one cell, but can make reactions to the environment; From one cell to multiple cells would be the next step, cell here could refer to one basic computing unit. But the communication between those cells is yet to be found, and that’ll be advent of real AI.</p>
+                <a href="#" class="post-link">Read More...</a>
+            </div>
+
+            <div class="blog-post">
+                <h1 class="blog-title">The Righteousness of Human in The Loop</h1>
+                <h2 class="date">Posted 18th Sep 2017</h2>
+                <p class="blog-content">Tay was an artificial intelligence chatterbot that was originally released by Microsoft Corporation via Twitter on March 23, 2016, but was shut down in 16 hours after its launch due to its racist tweets, however, all the language of Tay was learnt from the real users of the internet. We could shut down an AI, but can we ban people from expressing themselves? We can see a conflict between the censorship of wrong doing and the freedom of express here.</p>
+                <p class="blog-content">Another interesting example is the gender bias of NLP, like the title of one paper noted “Man is to Computer Programmer as Woman is to Homemaker”, the author proposed one human in the loop solution, which is to modify the algorithm by human: “we provide a methodology for modifying an embedding to remove gender stereotypes”. I would say the ultimate version of the AI with the fixed algorithm will be a political perfectly correct AI, whose language will have no bias, and surely derived from a real person. However, that does not mean I am against this type of political correct AI, rather, I’d use the notion of publicity to determine how “politically correct” an AI should be.</p>
+                <p class="blog-content">Take the judicial AI for example, in this case, the data processed should be with absolute publicity, that means without any bias. Race will not be a factor to weigh the possibility of criminal. In terms of chatbot, it cannot be too non-biased, because the users are usually a private group with a specific ideology. However, I’d propose a test on the extremity, the specific algorithm should be about weighing of the extremity of some expression and then decide whether the expression is harmful. Hence, a little-biased bot is doable, and the extent of non-biasedness should be determined by the publicity of the environment. </p>
+                <a href="#" class="post-link">Read More...</a>
+            </div>
+
+            <div class="blog-post">
+                <h1 class="blog-title">Code As A Product</h1>
+                <h2 class="date">Posted 10th Sep 2017</h2>
+                <p class="blog-content">Every production process has some basic rules to follow, regarding to the rules of coding, data structures is the fundatmental knowledge. So all codes are made of some basic units, like "lists tuples queues sequences dictionaries hashtables", and all actions could be down with "sort search swap increment group match". If one knows those notions mentioned above, the coding world will not be a mysterious world. In terms of the nature of software, Rob Kitchin and Martin Dodge discussed the viability of human control, the basic idea of their writing is that it is we human who is coding, programming is a “performative and negotiable” process. In another article by Wendy Hui Kyong Chun, Gray Room, the main concept delivered is the “immaterial” program is influenced by “ideology”. While in the A Declaration of Independence of Cyberspace, John Perry Barlow, the author believes that internet is an ultimately free world of minds and without physical chains. Obviously, the internet is without physical chains, but that does’t mean it’s an equal and ideal space for public sphere, at least not in today’s internet. The classic notion of public sphere by Habermas is criticized by Nancy Fraser in Rethinking the Public Sphere, she basically said the classic idea of public sphere is not tenable in late 20th Capitalist world because we ignored the inequality issue. I agree with that point, and same in the internet today, we are using platforms which is run by private companies, that’s where the power lies. Big companies is controlling the internet similar to the monopoly in the 20th century Capitalist world. However, I am still optimistic with the future of internet, especially looking forwards to the day when the threshold of programming is lowered to everyone to participate, hopefully AI is the solution, and that will be a more equal world of internet.
+                </p>
+                <a href="#" class="post-link">Read More...</a>
+            </div>
+
+            <div class="blog-post">
+                <h1 class="blog-title">Arabic Star Format</h1>
+                <h2 class="date">Posted 10th Sep 2017</h2>
+                <img src="images/nyuad.jpg">
+                <p class="blog-content">Code should be in a certain format, another good-formatted thing I recently noticed are those arabic star-like patterns. Arabic people are fond of repetition, like the language itself, when one says "Sabah el-khair" the other replies "Sabah en-noor", it's like ping-pang, when one thing is generated, some other similar thing is followed. The same philosophy could be found in the islamic star like patterns, like the NYU AD logo, which is consisted with four torches reflected to each other, the interesting thing of this logo is that it could extend, to a infinity surface. So I made a website to draw this kind of repetitive patterns. </p>
+                <a href="https://suhan1996.github.io/StarPatternsGenerator/" class="post-link">See it here...</a>
+            </div>
+
+            <div class="blog-post">
+                <h1 class="blog-title">24 Characters</h1>
+                <h2 class="date">Posted 9th Sep 2017</h2>
+                <img src="images/24image.png">
+                <p class="blog-content">The 24 Characters make up twelve words, namedly the "Core Socialist Values", and have been endorsed by the Party. When I in Beijing, I saw the 24 characters on streets; When I in Urumqi, I saw the 24 characters on buses; When I in Shanghai, I saw the 24 characters on buildings; When I back home, still, I see the 24 characters on TV. Here's the translation of the 12 words: Prosperity    Democracy    Civility    Harmony    Freedom     Equality    Justice    Rule of Law    Patriotism    Dedication    Integrity    Friendship</p>
+                <a href="http://suhan1996.github.io/24Chars" class="post-link">See it here...</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!--<div class="blog-card">-->
+    <!--<div class="photo photo1"></div>-->
+    <!--<ul class="details">-->
+        <!--<li class="author"><a href="#">John Doe</a></li>-->
+        <!--<li class="date">Aug. 24, 2015</li>-->
+        <!--<li class="tags">-->
+            <!--<ul>-->
+                <!--<li><a href="#">Learn</a></li>-->
+                <!--<li><a href="#">Code</a></li>-->
+                <!--<li><a href="#">HTML</a></li>-->
+                <!--<li><a href="#">CSS</a></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+    <!--</ul>-->
+    <!--<div class="description">-->
+        <!--<h1>Learning to Code</h1>-->
+        <!--<h2>Opening a door to the future</h2>-->
+        <!--<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>-->
+        <!--<a href="#">Read More</a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="blog-card alt">-->
+    <!--<div class="photo photo2"></div>-->
+    <!--<ul class="details">-->
+        <!--<li class="author"><a href="#">Jane Doe</a></li>-->
+        <!--<li class="date">July. 15, 2015</li>-->
+        <!--<li class="tags">-->
+            <!--<ul>-->
+                <!--<li><a href="#">Learn</a></li>-->
+                <!--<li><a href="#">Code</a></li>-->
+                <!--<li><a href="#">JavaScript</a></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+    <!--</ul>-->
+    <!--<div class="description">-->
+        <!--<h1>Mastering the Language</h1>-->
+        <!--<h2>Java is not the same as JavaScript</h2>-->
+        <!--<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>-->
+        <!--<a href="#">Read More</a>-->
+    <!--</div>-->
+<!--</div>-->
+</body>
+<!--END PEN CODE-->
