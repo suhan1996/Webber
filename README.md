@@ -1,5 +1,5 @@
 # Webber
-![alt text](logo_webber.png)
+![alt text](lg_webber.png)
 
 Still working in progress, but now I have a chrome extension demo.
 
