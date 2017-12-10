@@ -42,6 +42,15 @@ router.get('/:title', function(req, res, next) {
     });
 });
 
+router.post('/changelikes',function (req,res) {
+    console.log('whatwhatwhatwhatwhat');
+    // db.collection("boom").find({}).toArray(function(err, result) {
+    //     if (err) throw err;
+    //     console.log(result);
+    //     db.close();
+    //     res.send(result);
+    // });
+});
 
 router.get('/database', function(req, res, next) {
     res.render('index', { title: 'Express' });
